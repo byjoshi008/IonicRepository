@@ -9,7 +9,6 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item (click)="itemTapped()">March Madness Tournament</button>
-    <button ion-item (click)="itemTapped()">Summer Showdown</button>
+    <button *ngFor="let item of tournaments" ion-item (click)="itemTapped($event, item)">{{item.name}}</button>
   </ion-list>
 </ion-content>
