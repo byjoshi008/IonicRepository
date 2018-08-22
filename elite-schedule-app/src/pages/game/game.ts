@@ -38,6 +38,7 @@ export class GamePage {
     this.navCtrl.push(MapPage, this.game);
   }
 
+  // check winner
   isWinner(score1, score2) {
     return Number(score1) > Number(score2) ? 'primary' : 'danger';
   }
