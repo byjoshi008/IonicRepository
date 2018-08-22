@@ -1,3 +1,11 @@
-page-game {
+page-game {}
 
+$border-style: thin solid #ddd;
+.top-bottom-border {
+    border-top: $border-style;
+    border-bottom: $border-style;
+}
+
+.divider-col {
+    border-right: $border-style;
 }
